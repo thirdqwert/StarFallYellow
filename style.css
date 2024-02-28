@@ -91,11 +91,8 @@ body {
 }
 
 .star::before {
-    content: '';
-    border-radius: 50%;
-    background: rgb(255, 215, 0,);
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.555) 0%, rgba(255, 215, 0, 0.555) 91%);
-    box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
+    content: url(123.png);
+    /* box-shadow: (0px -2px 26px 15px rgba(255, 215, 0, 0.15)); */
     position: absolute;
     width: 20px;
     height: 20px;
@@ -104,6 +101,7 @@ body {
     animation-name: shadow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    transform: rotate(180deg);
 }
 
 @keyframes fall {
@@ -113,7 +111,7 @@ body {
     }
 }
 
-@keyframes shadow {
+/* @keyframes shadow {
     0% {
         box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
     }
@@ -125,7 +123,7 @@ body {
     100% {
         box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
     }
-}
+} */
 
 .heading {
     position: absolute;
