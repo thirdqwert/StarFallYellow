@@ -91,8 +91,8 @@ body {
 }
 
 .star::before {
-    content: url(123.png);
-    /* box-shadow: (0px -2px 26px 15px rgba(255, 215, 0, 0.15)); */
+    content: '';
+    box-shadow: (0px -2px 26px 15px rgba(255, 215, 0, 0.15));
     position: absolute;
     width: 20px;
     height: 20px;
@@ -111,7 +111,7 @@ body {
     }
 }
 
-/* @keyframes shadow {
+@keyframes shadow {
     0% {
         box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
     }
@@ -123,7 +123,7 @@ body {
     100% {
         box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
     }
-} */
+}
 
 .heading {
     position: absolute;
