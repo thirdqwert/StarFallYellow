@@ -1,0 +1,175 @@
+@import url(font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.star {
+    width: 2px;
+    height: 150px;
+    background: rgb(255, 215, 0);
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0) 0%, rgba(255, 215, 0, 1) 46%, rgba(255, 215, 0, 0) 100%);
+    box-shadow: 0px -2px 20px 5px rgba(255, 215, 0, 0.15);
+    position: absolute;
+    border-radius: 20px;
+    animation-name: fall;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.star__1 {
+    top: -200px;
+    left: 5%;
+    animation-delay: 20s;
+}
+
+.star__2 {
+    top: -200px;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.star__3 {
+    top: -200px;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.star__4 {
+    top: -200px;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+.star__5 {
+    top: -200px;
+    left: 50%;
+    animation-delay: 8s;
+}
+
+.star__6 {
+    top: -200px;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+.star__7 {
+    top: -200px;
+    left: 70%;
+    animation-delay: 9s;
+}
+
+.star__8 {
+    top: -200px;
+    left: 75%;
+    animation-delay: 2s;
+}
+
+.star__9 {
+    top: -200px;
+    left: 80%;
+    animation-delay: 6s;
+}
+
+.star__10 {
+    top: -200px;
+    left: 90%;
+    animation-delay: 8s;
+}
+
+.star::before {
+    content: '';
+    border-radius: 50%;
+    background: rgb(255, 215, 0,);
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.555) 0%, rgba(255, 215, 0, 0.555) 91%);
+    box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -10px;
+    left: -10px;
+    animation-name: shadow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(130vh);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
+    }
+
+    50% {
+        box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.63);
+    }
+
+    100% {
+        box-shadow: 0px -2px 26px 15px rgba(255, 215, 0, 0.15);
+    }
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.heading p {
+    color: rgb(255, 182, 87);
+    font-size: 60px;
+    font-family: 'Roboto';
+    font-weight: 1000;
+    text-shadow: 0px 2px 50px rgba(255, 215, 0, 1);
+}
+
+.hw1 {
+    animation-name: textLeft;
+    animation-duration: 2s;
+}
+
+.hw2 {
+    animation-name: textRight;
+    animation-duration: 2s;
+}
+
+@keyframes textLeft {
+    from {
+        transform: translateX(-65vw);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes textRight {
+    from {
+        transform: translateX(65vw);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
